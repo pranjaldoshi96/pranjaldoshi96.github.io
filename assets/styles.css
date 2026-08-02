@@ -108,6 +108,130 @@ a:focus-visible {
   font-weight: 750;
 }
 
+.hub-apps {
+  display: grid;
+  gap: 18px;
+}
+
+.ripple-card {
+  background: linear-gradient(145deg, rgba(42, 29, 91, 0.96), rgba(8, 29, 61, 0.98));
+}
+
+.ripple-card:hover {
+  border-color: rgba(66, 224, 207, 0.56);
+}
+
+.ripple-card .hub-card-link {
+  color: #6cf0df;
+}
+
+.ripplehop {
+  --orange: #42e0cf;
+  --orange-light: #9a72ef;
+  background:
+    radial-gradient(circle at 78% 9%, rgba(129, 83, 225, 0.24), transparent 34rem),
+    linear-gradient(180deg, #0f0725, #071a3a 66%, #050d19);
+}
+
+.ripplehop .site-header {
+  background: rgba(13, 7, 35, 0.78);
+}
+
+.game-preview {
+  transform: rotate(1deg);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 70% 32%, rgba(154, 114, 239, 0.22), transparent 12rem),
+    linear-gradient(180deg, #13072d, #08224b);
+}
+
+.game-score {
+  display: flex;
+  justify-content: space-between;
+  color: #dce4f3;
+  font-family: var(--font-geist-mono), monospace;
+  font-size: 0.76rem;
+  font-weight: 800;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.game-score strong {
+  color: #ffd96b;
+  font-size: 1.1rem;
+}
+
+.hop-field {
+  position: relative;
+  min-height: 350px;
+  margin-top: 30px;
+}
+
+.hop-pad {
+  position: absolute;
+  width: 48%;
+  height: 28px;
+  border: 2px solid rgba(255, 255, 255, 0.48);
+  border-radius: 999px;
+  background: #42e0cf;
+  box-shadow: 0 12px 0 rgba(0, 0, 0, 0.2), 0 0 24px rgba(66, 224, 207, 0.14);
+}
+
+.hop-pad::after {
+  content: "";
+  position: absolute;
+  width: 28px;
+  height: 28px;
+  left: 50%;
+  top: 50%;
+  border-radius: 50%;
+  background: #e5d65a;
+  transform: translate(-50%, -50%);
+}
+
+.hop-pad.one {
+  left: 2%;
+  bottom: 36px;
+}
+
+.hop-pad.two {
+  right: 2%;
+  top: 145px;
+  background: #9a72ef;
+}
+
+.hop-pad.three {
+  left: 8%;
+  top: 18px;
+  background: #ff6f74;
+}
+
+.hopper {
+  position: absolute;
+  left: 54%;
+  top: 92px;
+  display: grid;
+  width: 58px;
+  height: 58px;
+  place-items: center;
+  background: #fff4c7;
+  color: #27194c;
+  font-size: 1rem;
+  font-weight: 900;
+  clip-path: polygon(50% 0, 94% 24%, 94% 76%, 50% 100%, 6% 76%, 6% 24%);
+  filter: drop-shadow(0 0 18px rgba(255, 217, 107, 0.52));
+}
+
+.ripple-ring {
+  position: absolute;
+  right: -12px;
+  top: 126px;
+  width: 230px;
+  height: 78px;
+  border: 2px solid rgba(66, 224, 207, 0.28);
+  border-radius: 50%;
+}
+
 .back-link {
   display: inline-flex;
   margin-bottom: 22px;
@@ -178,6 +302,10 @@ nav a:hover,
   align-items: center;
   gap: clamp(56px, 8vw, 112px);
   padding-block: 92px 104px;
+}
+
+.hero-copy {
+  min-width: 0;
 }
 
 .kicker,
@@ -676,7 +804,7 @@ h2 {
 
   .hero {
     min-height: auto;
-    grid-template-columns: 1fr;
+    grid-template-columns: minmax(0, 1fr);
     padding-block: 70px 90px;
   }
 
@@ -728,17 +856,35 @@ h2 {
 }
 
 @media (max-width: 620px) {
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+
   .shell {
     width: min(100% - 28px, 1160px);
   }
 
   .header-inner {
     min-height: 68px;
+    gap: 12px;
+  }
+
+  .brand {
+    flex: 0 1 auto;
+    min-width: 0;
+  }
+
+  .brand img {
+    width: 32px;
+    height: 32px;
   }
 
   nav {
-    gap: 16px;
-    font-size: 0.78rem;
+    flex: 0 1 auto;
+    gap: 12px;
+    font-size: 0.74rem;
   }
 
   nav a:first-child {
@@ -755,12 +901,34 @@ h2 {
   }
 
   h1 {
-    font-size: clamp(3rem, 16vw, 4.4rem);
+    max-width: 100%;
+    font-size: clamp(2.85rem, 14vw, 4rem);
+    overflow-wrap: anywhere;
+  }
+
+  .hero-actions {
+    max-width: 100%;
+    align-items: flex-start;
+  }
+
+  .hero-actions > * {
+    max-width: 100%;
   }
 
   .hero-card {
+    width: 100%;
+    max-width: 100%;
     padding: 23px;
     border-radius: 22px;
+  }
+
+  .game-score {
+    gap: 12px;
+    font-size: 0.66rem;
+  }
+
+  .game-score strong {
+    font-size: 0.9rem;
   }
 
   .principles-grid {
