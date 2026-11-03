@@ -1124,21 +1124,21 @@ h2 {
   transform: translateY(-1px);
 }
 
-/* Nestwise ------------------------------------------------------------ */
+/* Firstnest ------------------------------------------------------------ */
 
-.nestwise-card {
+.firstnest-card {
   background: linear-gradient(145deg, rgba(48, 30, 34, 0.96), rgba(22, 14, 18, 0.98));
 }
 
-.nestwise-card:hover {
+.firstnest-card:hover {
   border-color: rgba(244, 140, 150, 0.56);
 }
 
-.nestwise-card .hub-card-link {
+.firstnest-card .hub-card-link {
   color: #f48c96;
 }
 
-.nestwise {
+.firstnest {
   --orange: #e8798a;
   --orange-light: #f8b4a8;
   background:
@@ -1146,7 +1146,7 @@ h2 {
     linear-gradient(180deg, #1d1517, #140f11 62%, #0c090a);
 }
 
-.nestwise .site-header {
+.firstnest .site-header {
   background: rgba(24, 17, 19, 0.78);
 }
 
