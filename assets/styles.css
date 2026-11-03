@@ -1197,21 +1197,21 @@ h2 {
   color: rgba(255, 255, 255, 0.62);
 }
 
-/* TechShorts ----------------------------------------------------------- */
+/* Techgist ----------------------------------------------------------- */
 
-.techshorts-card {
+.techgist-card {
   background: linear-gradient(145deg, rgba(20, 36, 72, 0.96), rgba(10, 18, 38, 0.98));
 }
 
-.techshorts-card:hover {
+.techgist-card:hover {
   border-color: rgba(98, 146, 255, 0.56);
 }
 
-.techshorts-card .hub-card-link {
+.techgist-card .hub-card-link {
   color: #7fa6ff;
 }
 
-.techshorts {
+.techgist {
   --orange: #4f86ff;
   --orange-light: #9cbcff;
   background:
@@ -1219,7 +1219,7 @@ h2 {
     linear-gradient(180deg, #0d1527, #0a101e 62%, #070b14);
 }
 
-.techshorts .site-header {
+.techgist .site-header {
   background: rgba(11, 18, 33, 0.78);
 }
 

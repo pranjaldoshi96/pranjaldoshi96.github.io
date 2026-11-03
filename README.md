@@ -14,8 +14,8 @@ Public product, support, and privacy pages for apps published by Pranjal Doshi.
 - Support: <https://pranjaldoshi96.github.io/apps/ripplehop/support/>
 - Privacy: <https://pranjaldoshi96.github.io/apps/ripplehop/privacy/>
 
-## TechShorts
+## Techgist
 
-- Product: <https://pranjaldoshi96.github.io/apps/techshorts/>
-- Support: <https://pranjaldoshi96.github.io/apps/techshorts/support/>
-- Privacy: <https://pranjaldoshi96.github.io/apps/techshorts/privacy/>
+- Product: <https://pranjaldoshi96.github.io/apps/techgist/>
+- Support: <https://pranjaldoshi96.github.io/apps/techgist/support/>
+- Privacy: <https://pranjaldoshi96.github.io/apps/techgist/privacy/>
