@@ -1123,3 +1123,76 @@ h2 {
   background: rgba(255, 122, 26, 0.16);
   transform: translateY(-1px);
 }
+
+/* Nestwise ------------------------------------------------------------ */
+
+.nestwise-card {
+  background: linear-gradient(145deg, rgba(48, 30, 34, 0.96), rgba(22, 14, 18, 0.98));
+}
+
+.nestwise-card:hover {
+  border-color: rgba(244, 140, 150, 0.56);
+}
+
+.nestwise-card .hub-card-link {
+  color: #f48c96;
+}
+
+.nestwise {
+  --orange: #e8798a;
+  --orange-light: #f8b4a8;
+  background:
+    radial-gradient(circle at 76% 10%, rgba(232, 121, 138, 0.18), transparent 34rem),
+    linear-gradient(180deg, #1d1517, #140f11 62%, #0c090a);
+}
+
+.nestwise .site-header {
+  background: rgba(24, 17, 19, 0.78);
+}
+
+/* A flat sketch of the Today screen: age, this week's headline, 24-hour stats. */
+.nest-preview {
+  transform: rotate(-1deg);
+  background: linear-gradient(180deg, #2a1d21, #1a1215);
+}
+
+.nest-stage {
+  margin: 18px 0 4px;
+  color: #f48c96;
+  font-weight: 700;
+}
+
+.nest-headline {
+  margin: 0 0 18px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.nest-stats {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.nest-stats span {
+  padding: 12px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.85rem;
+}
+
+.nest-stats strong {
+  display: block;
+  color: #f8b4a8;
+  font-size: 1.25rem;
+}
+
+.nest-next {
+  margin: 0;
+  text-align: center;
+  font-size: 0.92rem;
+  color: rgba(255, 255, 255, 0.62);
+}
