@@ -1196,3 +1196,81 @@ h2 {
   font-size: 0.92rem;
   color: rgba(255, 255, 255, 0.62);
 }
+
+/* TechShorts ----------------------------------------------------------- */
+
+.techshorts-card {
+  background: linear-gradient(145deg, rgba(20, 36, 72, 0.96), rgba(10, 18, 38, 0.98));
+}
+
+.techshorts-card:hover {
+  border-color: rgba(98, 146, 255, 0.56);
+}
+
+.techshorts-card .hub-card-link {
+  color: #7fa6ff;
+}
+
+.techshorts {
+  --orange: #4f86ff;
+  --orange-light: #9cbcff;
+  background:
+    radial-gradient(circle at 76% 10%, rgba(47, 107, 255, 0.2), transparent 34rem),
+    linear-gradient(180deg, #0d1527, #0a101e 62%, #070b14);
+}
+
+.techshorts .site-header {
+  background: rgba(11, 18, 33, 0.78);
+}
+
+/* A flat sketch of one story card: source, headline, 60-word summary, category tabs. */
+.shorts-preview {
+  transform: rotate(-1deg);
+  background: linear-gradient(180deg, #16223d, #0e1628);
+}
+
+.shorts-source {
+  margin: 18px 0 6px;
+  color: #7fa6ff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.shorts-source span {
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 500;
+  letter-spacing: 0;
+}
+
+.shorts-headline {
+  margin: 0 0 10px;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.shorts-summary {
+  margin: 0 0 18px;
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.95rem;
+}
+
+.shorts-tabs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.shorts-tabs span {
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.06);
+  color: rgba(255, 255, 255, 0.62);
+  font-size: 0.82rem;
+}
+
+.shorts-tabs .on {
+  background: #2f6bff;
+  color: #fff;
+}
