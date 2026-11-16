@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="How Techgist protects your privacy and keeps your reading on your device.">
+    <meta name="description" content="What Techgist stores on your iPhone, and the one thing its server holds if you turn on big story alerts.">
     <title>Privacy Policy · Techgist</title>
     <link rel="icon" href="/assets/techgist-icon.png">
     <link rel="stylesheet" href="/assets/styles.css">
@@ -28,49 +28,62 @@
         <div class="legal-heading">
           <p class="kicker">Plain language, by design</p>
           <h1>Privacy Policy</h1>
-          <p>Techgist · Last updated November 3, 2026</p>
+          <p>Techgist · Last updated November 16, 2026</p>
         </div>
 
         <div class="legal-layout">
           <aside>
-            <p class="legal-summary">Techgist does not collect, sell, or share your personal data. What you read and save stays on your iPhone.</p>
+            <p class="legal-summary">Techgist has no accounts, no advertising, no analytics and no tracking. What you read and save stays on your iPhone. If you turn on big story alerts in version 2.0 or later, our server keeps your phone's notification address so it can send them. That is the only information about you or your device we hold.</p>
             <a href="mailto:pranjaldoshi96@gmail.com?subject=Techgist%20Privacy">Privacy question? Email us</a>
           </aside>
 
           <article class="legal-copy">
             <section>
               <h2>Overview</h2>
-              <p>Techgist is an iPhone news reader for technology, AI, startup and developer news. It works without an account, advertising, analytics, or tracking.</p>
+              <p>Techgist is an iPhone news reader for technology, AI, startup and developer news. This policy describes version 2.0 and later. What was different in earlier versions is at the end.</p>
             </section>
             <section>
               <h2>Information stored on your device</h2>
-              <p>The app stores the stories you save, the sources you turn off, your daily digest and summary settings, and a cache of recent stories and images so the app opens quickly and works offline. All of it lives in Techgist' local app container on your device.</p>
-              <p>Techgist' developer does not receive or have access to this information.</p>
+              <p>The app stores the stories you save, which stories you have read, the sources you muted, your notification and reading settings, and a cache of recent stories and pictures so the app opens quickly and works offline. All of it lives in Techgist's own storage on your device. We do not receive it and cannot see it.</p>
+            </section>
+            <section>
+              <h2>Information sent to Techgist's server (only with big story alerts on)</h2>
+              <p>When you turn on "Big story alerts" and allow notifications, the app sends our server:</p>
+              <ul>
+                <li>the push notification token Apple issues for Techgist on your device (a device identifier used only to deliver notifications to this app)</li>
+                <li>your time zone, so alerts are not sent at night</li>
+                <li>your language and region setting (for example en_US)</li>
+                <li>the app's version number</li>
+              </ul>
+              <p>We use this only to send you big story alerts. It is not linked to your name, email, an account or anything else that identifies you, it is not used for advertising or tracking, and it is not sold or shared. The server also records which alerts it has already sent to that token so it does not send one twice.</p>
+              <p>When you turn "Big story alerts" off, or take away the notification permission, the app tells the server to delete the token and everything stored with it. Tokens Apple reports as no longer valid are deleted as well.</p>
+              <p>The server is a virtual server rented from Hostinger, located in India, and run only by Techgist's developer. Alerts travel through Apple's Push Notification service.</p>
+              <p>If you turned big story alerts on in an earlier version, version 2.0 asks you once before it sends anything to the server, and sends nothing if you turn alerts off.</p>
+              <p>If you never turn on big story alerts, nothing is sent to our server.</p>
             </section>
             <section>
               <h2>Where stories come from</h2>
-              <p>To show stories, the app downloads a list of the day's stories from GitHub (raw.githubusercontent.com), where Techgist publishes it. If that list is out of date, the app downloads public news feeds and article pages directly from the publishers, such as techcrunch.com and theverge.com. Article images load from the publishers' servers.</p>
-              <p>These are ordinary web requests. Like any website, GitHub and the publishers receive standard request information such as your IP address, under their own privacy policies. The requests contain nothing about you, what you read, or what you saved.</p>
+              <p>The app downloads the current list of stories, and the pictures on the cards, from GitHub (raw.githubusercontent.com), where Techgist publishes them. If that list is unavailable or out of date, the app downloads public news feeds directly from the publishers, such as techcrunch.com and theverge.com, and pictures then load from the publishers' servers.</p>
+              <p>These are ordinary web requests. Like any website, GitHub, the publishers and our server receive standard request information such as your IP address, under their own privacy policies. The requests contain nothing about what you read or saved.</p>
+            </section>
+            <section>
+              <h2>Summaries</h2>
+              <p>The short summaries on the cards are written by an AI model on Techgist's server from the publishers' articles, before the stories reach your phone. Nothing from your device is sent to any AI service.</p>
+            </section>
+            <section>
+              <h2>Notifications</h2>
+              <p>The morning gist is scheduled on your device and involves no server. Big story alerts are sent by Techgist's server as described above. Both are off until you turn them on, and each can be turned off in the app's Settings.</p>
             </section>
             <section>
               <h2>Information we do not collect</h2>
               <ul>
                 <li>No name, email address, account, or contact information</li>
-                <li>No reading history, saved stories, or preferences sent anywhere</li>
-                <li>No precise or approximate location</li>
-                <li>No device or advertising identifiers</li>
-                <li>No analytics or diagnostics sent to the developer</li>
+                <li>No reading history, saved stories, or preferences</li>
+                <li>No location</li>
+                <li>No advertising identifier</li>
+                <li>No analytics or diagnostics</li>
                 <li>No payment or financial information</li>
               </ul>
-            </section>
-            <section>
-              <h2>On-device summaries</h2>
-              <p>On iPhones that support Apple Intelligence, story summaries are written on your device by Apple's on-device model. Article text is not sent to the developer or to any AI service.</p>
-            </section>
-            <section>
-              <h2>Notifications</h2>
-              <p>If you turn on the daily digest, iOS asks for permission to show notifications. The digest is scheduled locally on your device and contains a headline. Nothing is sent to a server.</p>
-              <p>If you turn on big story alerts, the app checks for major stories when iOS refreshes it in the background and shows the alert itself. Alerts are created on your device; nothing is sent to a server.</p>
             </section>
             <section>
               <h2>Reading full articles</h2>
@@ -78,19 +91,23 @@
             </section>
             <section>
               <h2>Third parties</h2>
-              <p>Techgist contains no third-party software development kits and sends no app data to third parties.</p>
+              <p>Techgist contains no third-party software development kits and shares no data about you with third parties.</p>
             </section>
             <section>
               <h2>Retention and deletion</h2>
-              <p>Your saved stories and settings remain on your device until you remove the app. Because we do not receive your data, there is no server-side account or copy for us to delete.</p>
+              <p>Saved stories and settings stay on your device until you delete the app. The notification token on our server is deleted when you turn big story alerts off. To have it removed another way, email us and turn alerts off; we cannot look up a token by name because we hold no names.</p>
             </section>
             <section>
               <h2>Children's privacy</h2>
-              <p>Techgist does not collect personal information from anyone, including children.</p>
+              <p>Techgist does not knowingly collect personal information from children.</p>
+            </section>
+            <section>
+              <h2>Versions before 2.0</h2>
+              <p>In versions 1.0 to 1.2, big story alerts were created on your device and nothing was sent to Techgist's server, so no notification token was held. On iPhones with Apple Intelligence those versions could also write summaries on the device. Everything else in this policy applies to them as well.</p>
             </section>
             <section>
               <h2>Changes to this policy</h2>
-              <p>If Techgist' data practices change, this page will be updated before the relevant app version is released. The date at the top shows when the policy was last revised.</p>
+              <p>If Techgist's data practices change, this page will be updated before the app version that changes them is released. The date at the top shows the last revision.</p>
             </section>
             <section>
               <h2>Contact</h2>
